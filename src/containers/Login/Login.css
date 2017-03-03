@@ -1,0 +1,54 @@
+.long-loginContainer {
+      min-width: 320px;
+      max-width: 400px;
+      height: auto;
+      position: absolute;
+      top: 20%;
+      left: 0;
+      right: 0;
+      margin: auto;
+}
+
+.long-paper {
+    padding: 20px;
+    overflow: auto
+}
+.long-buttonsDiv {
+    text-align: center;
+    padding: 10px
+}
+.long-flatButton {
+    color: #9E9E9E !important;
+}
+
+.long-checkRemember {     
+    float: left;
+    max-width: 180px;
+    padding-top: 5px;
+}
+.long-labelStyle{
+    color: #9E9E9E !important;
+}
+
+.long-iconStyle {
+    color: #9E9E9E !important;
+    border-color: #9E9E9E !important;
+    fill: #9E9E9E !important;
+}
+
+.long-loginBtn {
+    float: right;
+    background-color: #9E9E9E !important;
+}
+
+.long-btn {
+    background: '#4f81e9';
+    color: white;
+    padding: 7px;
+    border-radius: 2px;
+    margin: 2px;
+    font-size: 13;
+}
+.long-btnSpan {
+    margin-left: 5px;
+}

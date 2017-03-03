@@ -1,0 +1,36 @@
+.navigation-container {
+      margin: auto;
+}
+
+.navigation-logo {
+      cursor: pointer;
+      font-size: 22;
+      color: white;
+      font-weight: light;
+      background-color: #00BCD4;
+      padding-left: 40px;
+      height: 64px;
+    }
+.navigation-avatar-div {
+        padding: 15px 0 20px 15px;
+        background-image:  url('../../images/menu-bg.png');
+        height: 60px;
+      }
+.navigation-icon {
+        float: left;
+        display: block;
+        margin-right: 15px;
+        box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.2);
+      }
+.navigation-span {
+        padding-top: 12px;
+        display: block;
+        color: white;
+        font-weight: 300px;
+        text-shadow: 1px 1px #444;
+      }
+
+.navigation-menuItem {
+      color: white;
+      font-size: 14px
+}
