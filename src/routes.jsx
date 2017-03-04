@@ -7,21 +7,21 @@ import {
 } from 'react-router'
 
 import { App,Login, Signup, Dashboard } from './containers'
-import {RegisterDonor,DonorList, DonorDetail} from './components'
+import { AddStore,AddProduct,PurchaseProduct,
+            SaleProduct,ViewStock, ViewSales} from './components'
 
 export default (
     <Router history={browserHistory}>
-        <Route path="login" component={Login} />
-        <Route path="signup" component={Signup} />
+        <Route path="login" component={Login} />        
         <Route path="/" component={App}>
             <IndexRoute component={Dashboard} />            
-            <Route path="dashboard" component={Dashboard} >
-                <IndexRoute component={DonorList} />
-                <Route path="registerDonor" component={RegisterDonor} />
-                <Route path="donorlist" component={DonorList} />
-                <Route path="donorlist/:id" component={DonorDetail} />
-            </Route>
-            
+            <Route path="dashboard" component={Dashboard} />
+            <Route path="addstore" component={AddStore} />
+            <Route path="addproduct" component={AddProduct} />
+            <Route path="purchaseproduct" component={PurchaseProduct} />
+            <Route path="saleproduct" component={SaleProduct} />
+            <Route path="viewstock" component={ViewStock} />
+            <Route path="viewsales" component={ViewSales} />
         </Route>
     </Router>
 )

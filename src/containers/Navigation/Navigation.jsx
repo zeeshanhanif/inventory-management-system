@@ -44,7 +44,7 @@ class Navigation extends Component {
     return (
       <div>
           <div className="navigation-avatar-div">
-            <Avatar src="http://www.material-ui.com/images/uxceo-128.jpg"
+            <Avatar src="https://addons.cdn.mozilla.net/user-media/userpics/0/0/45.png"
                     size={50}
                     className="navigation-icon"/>
             <span className="navigation-span">{this.props.authUser.fullName}</span>
@@ -57,16 +57,41 @@ class Navigation extends Component {
             />
           <MUI.MenuItem
               className="navigation-menuItem"
-              primaryText={this.props.authUser.isDonor?"Update Info":"Register as Doner"} 
+              primaryText="Add Store" 
               leftIcon={<Web/>}
-              containerElement={<Link to="/dashboard/registerDonor"/>}
+              containerElement={<Link to="/addstore"/>}
             />
           <MUI.MenuItem
-            className="navigation-menuItem"
-            primaryText="Donors"
-            leftIcon={<Web/>}
-            containerElement={<Link to="/dashboard/donorlist"/>}
-          />
+              className="navigation-menuItem"
+              primaryText="Add Product" 
+              leftIcon={<Web/>}
+              containerElement={<Link to="/addproduct"/>}
+            />
+          <MUI.MenuItem
+              className="navigation-menuItem"
+              primaryText="Add Purchase Detail" 
+              leftIcon={<Web/>}
+              containerElement={<Link to="/purchaseproduct"/>}
+            />
+          <MUI.MenuItem
+              className="navigation-menuItem"
+              primaryText="Add Sale Detail" 
+              leftIcon={<Web/>}
+              containerElement={<Link to="/saleproduct"/>}
+            />
+          <MUI.MenuItem
+              className="navigation-menuItem"
+              primaryText="View Stock" 
+              leftIcon={<Web/>}
+              containerElement={<Link to="/viewstock"/>}
+            />
+          <MUI.MenuItem
+              className="navigation-menuItem"
+              primaryText="View Sales" 
+              leftIcon={<Web/>}
+              containerElement={<Link to="/viewsales"/>}
+            />
+          
       </div>
     );
   }
@@ -74,12 +99,12 @@ class Navigation extends Component {
   render() {
     return (
       <div className="navigation-container">
-        <MUI.AppBar style={this.props.styles} title="Blood Bank System"
+        <MUI.AppBar style={this.props.styles} title="Inventory Management System"
               onLeftIconButtonTouchTap={this.props.drawerToggle}
               iconElementRight={<MUI.FlatButton label="Sign out" onTouchTap={this.props.logout}/>}
               onRightIconButtonTouchTap={()=>this.context.router.push("/login")}
               />
-        <MUI.Drawer open={this.props.drawerOpen} docked={false}
+        <MUI.Drawer open={this.props.drawerOpen} docked={true}
             onRequestChange={this.props.drawerToggle}>
           {this.drawerMenu()}
         </MUI.Drawer>

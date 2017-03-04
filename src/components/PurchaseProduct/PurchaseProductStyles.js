@@ -1,10 +1,10 @@
 import {grey400} from 'material-ui/styles/colors';
 const styles = {
-  registerDonorContainer: {
+  purchaseProductContainer: {
       minWidth: 320,
-      maxWidth: 400,
+      maxWidth: 500,
       height: 'auto',
-      position: 'absolute',
+      //position: 'absolute',
       top: '20%',
       left: 0,
       right: 0,

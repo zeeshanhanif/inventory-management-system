@@ -89,7 +89,7 @@ class Login extends Component {
           </MUI.Paper>
 
           <div className="long-buttonsDiv">
-          <Link to="/signup">
+          <Link to="/login">
               <MUI.FlatButton
                 label="Register"                
                 className="long-flatButton"

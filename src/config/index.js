@@ -3,10 +3,10 @@ import * as firebase from 'firebase'
 
 // adding firebase configuration
 var config = {
-    apiKey: "AIzaSyAWmkL-pG4fUXcRSjQ5xh5QusnyKFqnIIw",
-    authDomain: "inventory-management-sys-9b77e.firebaseapp.com",
-    databaseURL: "https://inventory-management-sys-9b77e.firebaseio.com",
-    storageBucket: "inventory-management-sys-9b77e.appspot.com",
-    messagingSenderId: "451701337957"
+    apiKey: "AIzaSyDq4YtXDQtQbY7EgySPTjBmq3QHMN8Fs8k",
+    authDomain: "demotest-8c044.firebaseapp.com",
+    databaseURL: "https://demotest-8c044.firebaseio.com",
+    storageBucket: "demotest-8c044.appspot.com",
+    messagingSenderId: "715310345098"
   };
 firebase.initializeApp(config);

@@ -8,15 +8,6 @@ import './config'
 
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
-/*
-ReactDOM.render((
-    <Provider store={store}>
-        <App/>
-    </Provider>
-  ),
-  document.getElementById('root')
-);
-*/
 
 ReactDOM.render((
     <Provider store={store}>
