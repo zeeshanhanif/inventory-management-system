@@ -115,6 +115,7 @@ class ViewSales extends Component {
                 <TableHeaderColumn>Type</TableHeaderColumn>
                 <TableHeaderColumn>Quantity</TableHeaderColumn>
                 <TableHeaderColumn>Unit Price</TableHeaderColumn>
+                 <TableHeaderColumn>Sale Volume</TableHeaderColumn>
                 <TableHeaderColumn>Date</TableHeaderColumn>
               </TableRow>
             </TableHeader>
@@ -133,6 +134,7 @@ class ViewSales extends Component {
                         <TableRowColumn>{saleItem.type}</TableRowColumn>
                         <TableRowColumn>{saleItem.quantity}</TableRowColumn>
                         <TableRowColumn>{saleItem.unitPrice}</TableRowColumn>
+                        <TableRowColumn>{saleItem.quantity * saleItem.unitPrice}</TableRowColumn>
                         <TableRowColumn><Moment format="DD/MMM/YYYY">{saleItem.date}</Moment></TableRowColumn>
                       </TableRow>
                    );

@@ -9,10 +9,12 @@ import {
 import { App,Login, Signup, Dashboard } from './containers'
 import { AddStore,AddProduct,PurchaseProduct,
             SaleProduct,ViewStock, ViewSales} from './components'
-
+            
+//<Route path="signup" component={Signup} />        
 export default (
     <Router history={browserHistory}>
         <Route path="login" component={Login} />        
+        
         <Route path="/" component={App}>
             <IndexRoute component={Dashboard} />            
             <Route path="dashboard" component={Dashboard} />

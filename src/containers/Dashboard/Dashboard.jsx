@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './Dashboard.css';
+import {Graphs} from '../../components'
 
 function mapStateToProps(state) {
     return {
@@ -21,7 +22,10 @@ class Dashboard extends Component {
     return (
       <div className="dashboard-container">
         <div>
-          New Notifications
+          Please Wait while we are loading Charts for you
+        </div>
+        <div>
+            <Graphs {...this.props} />
         </div>
       </div>
     );
